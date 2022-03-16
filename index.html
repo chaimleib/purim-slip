@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy Purim!</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8" />
+    <script>
+      function growHeight(iframe) {
+        var pixHeight = iframe.contentWindow.document.body.scrollHeight;
+        iframe.style.height = pixHeight + 'px';
+      }
+    </script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="frame"><iframe onload="growHeight(this)" scrolling="no" src="card.html"></iframe></div>
+      <div class="frame"><iframe onload="growHeight(this)" scrolling="no" src="card.html"></iframe></div>
+      <div class="frame"><iframe onload="growHeight(this)" scrolling="no" src="card.html"></iframe></div>
+      <div class="frame"><iframe onload="growHeight(this)" scrolling="no" src="card.html"></iframe></div>
+      <div class="frame"><iframe onload="growHeight(this)" scrolling="no" src="card.html"></iframe></div>
+      <div class="frame"><iframe onload="growHeight(this)" scrolling="no" src="card.html"></iframe></div>
+    </div>
+  </body>
+</html>
